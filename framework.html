@@ -5,9 +5,9 @@
 <nav class="detleng-nav">
 
 <div class="detleng-logo">
-<span style="font-size:28px;">
-<strong style="color:black;"> ✦ DeTLeng ✦ </strong><br>
-
+<span style="font-size:28px;">   
+<span style="color:blue;">✦</span> <strong style="color:black;">DeTLeng</strong> <span style="color:blue;">✦</span>
+</span>
 </div>
 
 <input type="checkbox" id="menu-toggle">
@@ -15,30 +15,21 @@
 <label for="menu-toggle" class="menu-icon">
 ☰ MENU
 </label>
-  
 
 <div class="menu-links">
 
 <a href="index.html">Home</a>
-
 <a href="about.html">About</a>
-
 <a href="services.html">Services</a>
-
 <a href="pricing.html">Pricing</a>
-
 <a href="framework.html">Framework</a>
-
 <a href="case-studies.html">Case Studies</a>
-
 <a href="policies.html">Policies</a>
-
 <a href="contact.html">Contact</a>
 
 </div>
 
 </nav>
-
 
 <style>
 
@@ -48,84 +39,94 @@
 
 .detleng-nav{
 
-position:fixed;
+    position:fixed;
+    top:0;
+    left:0;
 
-top:0;
-left:0;
+    width:100%;
 
-width:100%;
+    background:#ffffff;
 
-background:#ffffff;
+    border-bottom:1px solid #ddd;
 
-border-bottom:1px solid #ddd;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
 
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:99999;
 
-z-index:99999;
+    padding:15px 20px;
 
-padding:15px 20px;
-
-box-sizing:border-box;
+    box-sizing:border-box;
 
 }
+
+/* Logo Left */
 
 .detleng-logo{
 
-font-size:20px;
+    position:absolute;
 
-font-weight:700;
+    left:20px;
+    top:15px;
 
-display:inline-block;
+    font-weight:700;
 
 }
+
+/* Hide Checkbox */
 
 #menu-toggle{
 
-display:none;
+    display:none;
 
 }
+
+/* Menu Icon */
 
 .menu-icon{
 
-display:none;
+    display:none;
 
-font-size:28px;
+    font-size:28px;
 
-cursor:pointer;
+    cursor:pointer;
 
-float:right;
+    float:right;
+
+    font-weight:700;
 
 }
 
+/* Desktop Menu */
+
 .menu-links{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-gap:25px;
+    align-items:center;
 
-margin-top:10px;
+    gap:25px;
 
-flex-wrap:wrap;
+    margin-top:10px;
 
 }
 
 .menu-links a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#111;
+    color:#111;
 
-font-weight:600;
+    font-weight:600;
 
-font-family:Arial,sans-serif;
+    font-family:"Segoe UI", Arial, sans-serif;
 
 }
 
 .menu-links a:hover{
 
-color:#0066ff;
+    color:#0066ff;
 
 }
 
@@ -135,39 +136,249 @@ color:#0066ff;
 
 @media (max-width:768px){
 
-.menu-icon{
+    .menu-icon{
 
-display:block;
+        display:block;
+
+        text-align:right;
+
+        font-size:28px;
+
+    }
+
+    .menu-links{
+
+        display:none;
+
+        flex-direction:column;
+
+        position:absolute;
+
+        top:70px;
+
+        right:15px;
+
+        background:#ffffff;
+
+        padding:20px;
+
+        border-radius:12px;
+
+        box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+        min-width:140px;
+
+        text-align:right;
+
+        gap:15px;
+
+        z-index:99999;
+
+    }
+
+    .menu-links a{
+
+        display:block;
+
+        font-size:18px;
+
+        color:#111;
+
+    }
+
+    #menu-toggle:checked ~ .menu-links{
+
+        display:flex;
+
+    }
+
+}
+/* ===========================
+   DeTLeng Readability
+=========================== */
+
+body{
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+    color:#222;
+
+    line-height:1.8;
+
+    font-size:18px;
 
 }
 
-.menu-links{
+/* Paragraphs */
 
-display:none;
+p{
 
-flex-direction:column;
+    font-size:18px;
 
-margin-top:15px;
+    line-height:1.9;
 
-text-align:center;
+    color:#333;
+
+    margin-bottom:20px;
 
 }
 
-#menu-toggle:checked ~ .menu-links{
+/* Lists */
 
-display:flex;
+li{
 
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#333;
+
+}
+
+/* Headings */
+
+h1{
+
+    font-size:52px;
+
+    color:#111;
+
+}
+
+h2{
+
+    font-size:38px;
+
+    color:#111;
+
+}
+
+h3{
+
+    font-size:28px;
+
+    color:#111;
+
+}
+
+/* Mobile Headings */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+}
+
+</style>
+
+
+
+
+
+<style>
+
+/* ===========================
+   DeTLeng Content Layout
+=========================== */
+
+.detleng-content{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.detleng-content p{
+    max-width:850px;
+    font-size:18px;
+    line-height:1.9;
+    color:#333333;
+    margin-bottom:20px;
+}
+
+.detleng-content ul{
+    padding-left:25px;
+}
+
+.detleng-content li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+h1{
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.detleng-content h1{
+    font-size:52px;
+    color:#111111;
+}
+
+.detleng-content h2{
+    font-size:38px;
+    color:#111111;
+    margin-top:50px;
+}
+
+.detleng-content h3{
+    font-size:28px;
+    color:#111111;
+    margin-top:20px;
+}
+
+.detleng-content h4{
+    font-size:22px;
+    color:#111111;
+    margin-top:25px;
+}
+
+.detleng-content hr{
+    margin:40px 0;
+    border:none;
+    border-top:1px solid #dddddd;
+}
+
+@media (max-width:768px){
+
+.detleng-content{
+    padding:15px;
+}
+
+.detleng-content h1{
+    font-size:42px;
+}
+
+.detleng-content h2{
+    font-size:30px;
+}
+
+.detleng-content h3{
+    font-size:24px;
+}
+
+.detleng-content p,
+.detleng-content li{
+    font-size:17px;
 }
 
 }
 
 </style>
 
-<h1>DeTLeng</h1>
+<section class="detleng-content">
 
 
 <p>&nbsp;</p><h1>How We Work</h1><h2>A Structured Approach to Delivering Reliable Data Solutions</h2><p>At DeTLeng, we believe successful data projects begin with understanding the business behind the data.</p><p>Our goal is not simply to build dashboards, reports, or pipelines.</p><p>Our goal is to deliver practical solutions that improve reporting, increase operational visibility, and support better business decisions.</p><p>Every project follows a structured process designed to ensure quality, accuracy, and long-term value.</p><hr /><h2>Step 1: Understanding Your Business Requirements</h2><p>Every engagement starts with a discussion about your business objectives, reporting challenges, and data environment.</p><p>We work to understand:</p><ul><li><p>Business goals</p></li><li><p>Existing reporting processes</p></li><li><p>Data sources</p></li><li><p>Operational challenges</p></li><li><p>Key performance indicators (KPIs)</p></li><li><p>Desired outcomes</p></li></ul><p>This helps ensure the solution is aligned with your business needs from the beginning.</p><hr /><h2>Step 2: Data Assessment</h2><p>Once requirements are understood, we assess the available data and systems.</p><p>This may include:</p><ul><li><p>Data quality evaluation</p></li><li><p>Source system review</p></li><li><p>Spreadsheet analysis</p></li><li><p>Database assessment</p></li><li><p>Reporting process evaluation</p></li></ul><p>The objective is to identify opportunities for improvement and establish a reliable foundation for reporting and analytics.</p><hr /><h2>Step 3: Solution Design</h2><p>Based on the findings, we design a solution tailored to your requirements.</p><p>Depending on the project, this may involve:</p><ul><li><p>ETL &amp; ELT Pipelines</p></li><li><p>Data Transformation Workflows</p></li><li><p>BigQuery Data Warehouses</p></li><li><p>Power BI Dashboards</p></li><li><p>Reporting Automation</p></li><li><p>KPI Monitoring Frameworks</p></li><li><p>Business Intelligence Solutions</p></li></ul><p>Every solution is designed with scalability, maintainability, and business usability in mind.</p><hr /><h2>Step 4: Development and Implementation</h2><p>Once approved, development begins.</p><p>Project deliverables may include:</p><ul><li><p>Automated Data Pipelines</p></li><li><p>Data Models</p></li><li><p>BigQuery Implementations</p></li><li><p>Power BI Reports</p></li><li><p>Executive Dashboards</p></li><li><p>KPI Reporting Systems</p></li><li><p>Data Quality Improvements</p></li><li><p>Business Reporting Solutions</p></li></ul><p>All deliverables are tested and validated before final delivery.</p><hr /><h2>Step 5: Delivery and Business Insights</h2><p>After implementation, solutions are delivered along with relevant documentation and recommendations.</p><p>Where appropriate, we also provide insights and observations that help organizations better understand their data and reporting environment.</p><p>Our objective is not only to deliver a solution, but to help clients gain greater visibility into their business performance.</p><hr /><h2>Case Studies and Project Examples</h2><p>To help prospective clients understand our capabilities, DeTLeng may publish selected project examples, implementation summaries, dashboards, workflows, and case studies.</p><p>These examples demonstrate:</p><ul><li><p>Data Engineering Expertise</p></li><li><p>Reporting Automation Solutions</p></li><li><p>Power BI Development</p></li><li><p>BigQuery Implementations</p></li><li><p>Business Intelligence Workflows</p></li><li><p>Analytics Engineering Practices</p></li></ul><p>Any published examples are used for demonstration purposes and do not disclose confidential client information.</p><hr /><h2>Technologies We Work With</h2><p>DeTLeng focuses on practical solutions built using modern data and analytics technologies, including:</p><ul><li><p>BigQuery</p></li><li><p>Power BI</p></li><li><p>SQL</p></li><li><p>ETL &amp; ELT Solutions</p></li><li><p>Data Warehousing</p></li><li><p>Reporting Automation</p></li><li><p>Analytics Engineering</p></li><li><p>Business Intelligence Platforms</p></li></ul><p>Technology choices are always driven by business requirements rather than tool preferences.</p><hr /><h2>Why Businesses Choose DeTLeng</h2><p>Organizations partner with DeTLeng because they need practical solutions that deliver measurable value.</p><p>We focus on:</p><ul><li><p>Reliable Data Foundations</p></li><li><p>Automated Reporting</p></li><li><p>Business-Focused Analytics</p></li><li><p>Clear Communication</p></li><li><p>Scalable Solutions</p></li><li><p>Professional Documentation</p></li><li><p>Long-Term Maintainability</p></li></ul><p>Our success is measured by the value delivered to our clients.</p><hr /><h2>Let's Discuss Your Data Challenges</h2><p>Whether you need cleaner data, automated reporting, a Power BI dashboard, a BigQuery solution, or a complete analytics environment, DeTLeng is ready to help.</p><p>Contact us today to discuss your project requirements.</p><h1>DeTLeng</h1><h3>Data Engineering &amp; Analytics Solutions</h3><p><strong>Transforming Data Into Business Value</strong></p>
-
 
 
 
@@ -347,6 +558,7 @@ href="mailto:info@detleng.com?subject=Free%20Consultation%20Request&body=Hello%2
 
 </a>
 
+</section>
 
 </body>
 </html>
