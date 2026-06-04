@@ -5,9 +5,9 @@
 <nav class="detleng-nav">
 
 <div class="detleng-logo">
-<span style="font-size:28px;">
-<strong style="color:black;"> ✦ DeTLeng ✦ </strong><br>
-
+<span style="font-size:28px;">   
+<span style="color:blue;">✦</span> <strong style="color:black;">DeTLeng</strong> <span style="color:blue;">✦</span>
+</span>
 </div>
 
 <input type="checkbox" id="menu-toggle">
@@ -15,30 +15,21 @@
 <label for="menu-toggle" class="menu-icon">
 ☰ MENU
 </label>
-  
 
 <div class="menu-links">
 
 <a href="index.html">Home</a>
-
 <a href="about.html">About</a>
-
 <a href="services.html">Services</a>
-
 <a href="pricing.html">Pricing</a>
-
 <a href="framework.html">Framework</a>
-
 <a href="case-studies.html">Case Studies</a>
-
 <a href="policies.html">Policies</a>
-
 <a href="contact.html">Contact</a>
 
 </div>
 
 </nav>
-
 
 <style>
 
@@ -48,84 +39,94 @@
 
 .detleng-nav{
 
-position:fixed;
+    position:fixed;
+    top:0;
+    left:0;
 
-top:0;
-left:0;
+    width:100%;
 
-width:100%;
+    background:#ffffff;
 
-background:#ffffff;
+    border-bottom:1px solid #ddd;
 
-border-bottom:1px solid #ddd;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
 
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:99999;
 
-z-index:99999;
+    padding:15px 20px;
 
-padding:15px 20px;
-
-box-sizing:border-box;
+    box-sizing:border-box;
 
 }
+
+/* Logo Left */
 
 .detleng-logo{
 
-font-size:20px;
+    position:absolute;
 
-font-weight:700;
+    left:20px;
+    top:15px;
 
-display:inline-block;
+    font-weight:700;
 
 }
+
+/* Hide Checkbox */
 
 #menu-toggle{
 
-display:none;
+    display:none;
 
 }
+
+/* Menu Icon */
 
 .menu-icon{
 
-display:none;
+    display:none;
 
-font-size:28px;
+    font-size:28px;
 
-cursor:pointer;
+    cursor:pointer;
 
-float:right;
+    float:right;
+
+    font-weight:700;
 
 }
 
+/* Desktop Menu */
+
 .menu-links{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-gap:25px;
+    align-items:center;
 
-margin-top:10px;
+    gap:25px;
 
-flex-wrap:wrap;
+    margin-top:10px;
 
 }
 
 .menu-links a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#111;
+    color:#111;
 
-font-weight:600;
+    font-weight:600;
 
-font-family:Arial,sans-serif;
+    font-family:"Segoe UI", Arial, sans-serif;
 
 }
 
 .menu-links a:hover{
 
-color:#0066ff;
+    color:#0066ff;
 
 }
 
@@ -135,35 +136,248 @@ color:#0066ff;
 
 @media (max-width:768px){
 
-.menu-icon{
+    .menu-icon{
 
-display:block;
+        display:block;
+
+        text-align:right;
+
+        font-size:28px;
+
+    }
+
+    .menu-links{
+
+        display:none;
+
+        flex-direction:column;
+
+        position:absolute;
+
+        top:70px;
+
+        right:15px;
+
+        background:#ffffff;
+
+        padding:20px;
+
+        border-radius:12px;
+
+        box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+        min-width:140px;
+
+        text-align:right;
+
+        gap:15px;
+
+        z-index:99999;
+
+    }
+
+    .menu-links a{
+
+        display:block;
+
+        font-size:18px;
+
+        color:#111;
+
+    }
+
+    #menu-toggle:checked ~ .menu-links{
+
+        display:flex;
+
+    }
+
+}
+/* ===========================
+   DeTLeng Readability
+=========================== */
+
+body{
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+    color:#222;
+
+    line-height:1.8;
+
+    font-size:18px;
 
 }
 
-.menu-links{
+/* Paragraphs */
 
-display:none;
+p{
 
-flex-direction:column;
+    font-size:18px;
 
-margin-top:15px;
+    line-height:1.9;
 
-text-align:center;
+    color:#333;
+
+    margin-bottom:20px;
 
 }
 
-#menu-toggle:checked ~ .menu-links{
+/* Lists */
 
-display:flex;
+li{
 
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#333;
+
+}
+
+/* Headings */
+
+h1{
+
+    font-size:52px;
+
+    color:#111;
+
+}
+
+h2{
+
+    font-size:38px;
+
+    color:#111;
+
+}
+
+h3{
+
+    font-size:28px;
+
+    color:#111;
+
+}
+
+/* Mobile Headings */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+}
+
+</style>
+
+
+
+
+
+<style>
+
+/* ===========================
+   DeTLeng Content Layout
+=========================== */
+
+.detleng-content{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.detleng-content p{
+    max-width:850px;
+    font-size:18px;
+    line-height:1.9;
+    color:#333333;
+    margin-bottom:20px;
+}
+
+.detleng-content ul{
+    padding-left:25px;
+}
+
+.detleng-content li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+h1{
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.detleng-content h1{
+    font-size:52px;
+    color:#111111;
+}
+
+.detleng-content h2{
+    font-size:38px;
+    color:#111111;
+    margin-top:50px;
+}
+
+.detleng-content h3{
+    font-size:28px;
+    color:#111111;
+    margin-top:20px;
+}
+
+.detleng-content h4{
+    font-size:22px;
+    color:#111111;
+    margin-top:25px;
+}
+
+.detleng-content hr{
+    margin:40px 0;
+    border:none;
+    border-top:1px solid #dddddd;
+}
+
+@media (max-width:768px){
+
+.detleng-content{
+    padding:15px;
+}
+
+.detleng-content h1{
+    font-size:42px;
+}
+
+.detleng-content h2{
+    font-size:30px;
+}
+
+.detleng-content h3{
+    font-size:24px;
+}
+
+.detleng-content p,
+.detleng-content li{
+    font-size:17px;
 }
 
 }
 
 </style>
 
-<h1>DeTLeng</h1>
+<section class="detleng-content">
+
+
 
 <div><br /></div><div><h1>DeTLeng Privacy Policy</h1><h2>Protecting Your Business Information</h2><p>At DeTLeng, trust is the foundation of every client relationship.</p><p>When organizations share business information, reports, datasets, requirements, or operational challenges with us, they expect professionalism, confidentiality, and responsible handling of information.</p><p>We take that responsibility seriously.</p><p>This Privacy Policy explains how DeTLeng collects, uses, protects, and manages information shared through our website and consulting engagements.</p><hr /><h2>Our Privacy Commitment</h2><p>Our commitment is simple:</p><p><strong>Your Data. Your Business. Your Ownership.</strong></p><p>DeTLeng does not sell client information, share confidential business data, or claim ownership of any information provided during project discussions or service delivery.</p><p>All information shared with DeTLeng remains the property of the client or its rightful owner.</p><hr /><h2>Information We May Collect</h2><p>To evaluate project requirements and communicate effectively, we may collect information such as:</p><ul><li><p>Name</p></li><li><p>Company Name</p></li><li><p>Email Address</p></li><li><p>Contact Information</p></li><li><p>Project Requirements</p></li><li><p>Business Objectives</p></li><li><p>Reporting Challenges</p></li><li><p>Technical Requirements</p></li><li><p>Website Analytics Information</p></li></ul><p>Information is collected only when necessary to respond to inquiries, provide services, improve communication, or support project delivery.</p><hr /><h2>Information Shared During Consultations</h2><p>Organizations may contact DeTLeng regarding:</p><ul><li><p>Data Engineering Projects</p></li><li><p>ETL &amp; ELT Development</p></li><li><p>Power BI Dashboards</p></li><li><p>BigQuery Solutions</p></li><li><p>Reporting Automation</p></li><li><p>Business Intelligence</p></li><li><p>Data Quality Assessments</p></li><li><p>Analytics Engineering</p></li></ul><p>To evaluate potential solutions, clients may voluntarily share:</p><ul><li><p>Business Requirements</p></li><li><p>Reporting Needs</p></li><li><p>Technical Documentation</p></li><li><p>Process Descriptions</p></li><li><p>Sample Data</p></li><li><p>Project Specifications</p></li><li><p>Existing Reports and Dashboards</p></li><li><p>System Architecture Information</p></li></ul><p>All information is treated with professional confidentiality and used solely for project evaluation, communication, and service delivery.</p><hr /><h2>Client Systems, Credentials &amp; Access</h2><p>Certain projects may require DeTLeng to access client systems, cloud platforms, databases, analytics environments, APIs, or reporting tools.</p><p>Examples may include:</p><ul><li><p>Google Cloud Platform (GCP)</p></li><li><p>BigQuery</p></li><li><p>Power BI</p></li><li><p>SQL Databases</p></li><li><p>Cloud Storage Services</p></li><li><p>Data Warehouses</p></li><li><p>Analytics Platforms</p></li><li><p>Business Intelligence Tools</p></li><li><p>Third-Party APIs</p></li></ul><p>Clients may choose to provide:</p><ul><li><p>API Keys</p></li><li><p>Service Accounts</p></li><li><p>OAuth Permissions</p></li><li><p>Database Credentials</p></li><li><p>Cloud Access Permissions</p></li><li><p>Reporting Platform Access</p></li><li><p>Technical Configuration Information</p></li></ul><p>Such access is used exclusively for the delivery, testing, support, and maintenance of agreed project services.</p><p>DeTLeng does not sell, transfer, disclose, or use client credentials for any purpose beyond authorized project work.</p><p>Clients retain ownership and control of their systems, accounts, permissions, and access rights at all times.</p><p>Access may be revoked by the client upon project completion or at any other time deemed appropriate by the client.</p><hr /><h2>Data Ownership</h2><p>A core principle at DeTLeng is clear:</p><h3>Your Data Always Remains Yours</h3><p>DeTLeng does not claim ownership of:</p><ul><li><p>Client Data</p></li><li><p>Databases</p></li><li><p>Reports</p></li><li><p>Dashboards</p></li><li><p>Technical Documentation</p></li><li><p>API Configurations</p></li><li><p>Business Processes</p></li><li><p>Project Requirements</p></li><li><p>Intellectual Property</p></li><li><p>Proprietary Information</p></li></ul><p>Ownership remains with the client at all times.</p><hr /><h2>Confidentiality &amp; Professional Standards</h2><p>Business information is often one of an organization's most valuable assets.</p><p>DeTLeng treats all client communications, project discussions, datasets, reports, credentials, system configurations, technical documentation, and business requirements with professional discretion.</p><p>Information shared during consultations or project engagements is not disclosed to third parties unless:</p><ul><li><p>Required by applicable law</p></li><li><p>Authorized by the client</p></li><li><p>Necessary for approved project delivery</p></li></ul><p>We follow a business-first approach based on:</p><ul><li><p>Professional Integrity</p></li><li><p>Confidentiality</p></li><li><p>Responsible Data Handling</p></li><li><p>Access Control Awareness</p></li><li><p>Respect for Client Ownership</p></li><li><p>Information Security Best Practices</p></li></ul><p>Protecting client information is a fundamental part of our consulting standards.</p><hr /><h2>Information Security</h2><p>Protecting business information is a priority.</p><p>Reasonable technical and organizational measures are implemented to help:</p><ul><li><p>Protect Communications</p></li><li><p>Safeguard Client Credentials</p></li><li><p>Reduce Unauthorized Access Risks</p></li><li><p>Maintain System Integrity</p></li><li><p>Protect Project-Related Information</p></li><li><p>Support Secure Service Delivery</p></li></ul><p>While no online system can guarantee absolute security, DeTLeng is committed to handling information responsibly, professionally, and in accordance with accepted business practices.</p><hr /><h2>Our Promise</h2><p>At DeTLeng, we understand that successful consulting relationships are built on trust.</p><p>Clients trust us with business challenges, operational data, reporting requirements, cloud environments, technical systems, and strategic objectives.</p><p>In return, we are committed to professionalism, transparency, confidentiality, responsible access management, and respect for client ownership.</p><p>Your information remains your information.</p><p>Your systems remain your systems.</p><p>Your credentials remain under your control.</p><p>Our role is to help transform your data into better decisions and measurable business value.</p><h3>DeTLeng</h3><p><strong>Data Engineering &amp; Analytics Solutions</strong></p><p><em>Reliable Data. Better Decisions. Trusted Partnership.</em></p></div>
 
@@ -341,6 +555,11 @@ href="mailto:info@detleng.com?subject=Free%20Consultation%20Request&body=Hello%2
 👈
 
 </a>
+
+<br><br>
+
+
+</section>
 
 
 </body>
