@@ -7,22 +7,33 @@
 <style>
 
 /* ======================================================== */
-/* DeTLeng Sticky Logo */
+/* DeTLeng Sticky Logo START */
 /* ======================================================== */
 
 .detleng-logo{
 position:fixed;
-top:20px;
-left:20px;
+top:15px;
+left:15px;
 z-index:9999;
 background:white;
-padding:12px 18px;
+padding:10px 15px;
 border-radius:10px;
 box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
 
+.detleng-logo a{
+text-decoration:none;
+font-size:28px;
+font-weight:bold;
+}
+
 /* ======================================================== */
-/* DeTLeng Floating Menu */
+/* DeTLeng Sticky Logo END */
+/* ======================================================== */
+
+
+/* ======================================================== */
+/* DeTLeng Floating Menu START */
 /* ======================================================== */
 
 #menu-toggle{
@@ -31,14 +42,14 @@ display:none;
 
 .menu-icon{
 position:fixed;
-top:20px;
-right:20px;
+top:15px;
+right:15px;
 z-index:9999;
 
 background:#2563eb;
 color:white;
 
-padding:14px 22px;
+padding:12px 18px;
 border-radius:10px;
 
 font-weight:bold;
@@ -48,7 +59,7 @@ cursor:pointer;
 
 box-shadow:0 4px 12px rgba(0,0,0,0.25);
 
-transition:0.3s;
+transition:all 0.3s ease;
 }
 
 .menu-icon:hover{
@@ -57,12 +68,12 @@ transform:translateY(-2px);
 }
 
 .menu-links{
-
 position:fixed;
-top:75px;
-right:20px;
+top:65px;
+right:15px;
 
 width:240px;
+max-width:90vw;
 
 background:white;
 
@@ -82,7 +93,6 @@ display:block;
 }
 
 .menu-links a{
-
 display:block;
 
 padding:14px 18px;
@@ -95,21 +105,59 @@ font-weight:600;
 
 border-bottom:1px solid #eee;
 
-transition:0.3s;
+transition:all 0.3s ease;
 }
 
 .menu-links a:hover{
-
 background:#f3f8ff;
-
 color:#2563eb;
-
 padding-left:24px;
 }
 
 .menu-links a:last-child{
 border-bottom:none;
 }
+
+/* ======================================================== */
+/* Mobile Responsive */
+/* ======================================================== */
+
+@media (max-width:768px){
+
+.detleng-logo{
+top:10px;
+left:10px;
+padding:8px 12px;
+}
+
+.detleng-logo a{
+font-size:22px;
+}
+
+.menu-icon{
+top:10px;
+right:10px;
+padding:10px 14px;
+font-size:15px;
+}
+
+.menu-links{
+top:55px;
+right:10px;
+width:200px;
+max-width:90vw;
+}
+
+.menu-links a{
+padding:12px;
+font-size:15px;
+}
+
+}
+
+/* ======================================================== */
+/* DeTLeng Floating Menu END */
+/* ======================================================== */
 
 </style>
 
@@ -118,11 +166,11 @@ border-bottom:none;
 <!-- ======================================================== -->
 
 <div class="detleng-logo">
-<span style="font-size:28px;">
+<a href="index.html">
 <span style="color:green;">✦</span>
-<strong style="color:#2563eb;">DeTLeng</strong>
+<span style="color:#2563eb;">DeTLeng</span>
 <span style="color:green;">✦</span>
-</span>
+</a>
 </div>
 
 <!-- ======================================================== -->
@@ -167,9 +215,6 @@ border-bottom:none;
 <!-- ======================================================== -->
 <!-- DeTLeng Sticky Logo + Floating Menu END -->
 <!-- ======================================================== -->
-
-
-
 
 
 
