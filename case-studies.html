@@ -454,111 +454,62 @@ h1{
 
 
 
+
+
 <!-- ========================================================= -->
-<!-- MOBILE RESPONSIVE SETTINGS - START -->
-<!-- Prevent content from breaking page width on mobile -->
-<!-- Logo image remains unaffected -->
+<!-- MOBILE SETTINGS AVOID PAGE WIDTH OUT - STARTS -->
 <!-- ========================================================= -->
 
 <style>
-
-/* ---------------------------------------------------------
-   CONTENT IMAGES ONLY
-   (Do NOT affect navbar logo)
---------------------------------------------------------- */
+img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block;
+    margin: 20px auto;
+    border-radius: 6px;
+}
 
 article img,
 .markdown-body img,
 .content img,
-.case-study-content img,
-.detleng-content img {
-
+.case-study-content img {
     max-width: 100% !important;
+    width: 100% !important;
     height: auto !important;
-
-    display: block;
-    margin: 20px auto;
-
-    border-radius: 6px;
     box-sizing: border-box;
-
 }
 
-/* ---------------------------------------------------------
-   NAVBAR LOGO PROTECTION
---------------------------------------------------------- */
-
-.detleng-logo img {
-
-    height: 60px !important;
-    width: auto !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-    border-radius: 0 !important;
-
+table img,
+pre img,
+code img {
+    max-width: 100% !important;
 }
 
-/* ---------------------------------------------------------
-   TABLES
---------------------------------------------------------- */
-
-table {
-
-    max-width: 100%;
-    display: block;
-
-    overflow-x: auto;
-
+body {
+    overflow-x: hidden;
 }
+</style>
 
-/* ---------------------------------------------------------
-   CODE BLOCKS
---------------------------------------------------------- */
 
-pre {
 
-    max-width: 100%;
-    overflow-x: auto;
 
-}
 
-/* ---------------------------------------------------------
-   PREVENT HORIZONTAL PAGE SCROLL
---------------------------------------------------------- */
-
+<style>
 html,
 body,
 main,
 article,
 .content,
-.case-study-content,
-.detleng-content {
-
+.case-study-content {
     max-width: 100%;
     overflow-x: hidden;
-
 }
-
-/* ---------------------------------------------------------
-   LONG WORDS / URLS
---------------------------------------------------------- */
-
-.detleng-content,
-.case-study-content,
-.content {
-
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-
-}
-
 </style>
 
+
 <!-- ========================================================= -->
-<!-- MOBILE RESPONSIVE SETTINGS - END -->
+<!-- MOBILE SETTINGS AVOID PAGE WIDTH OUT - ENDS -->
 <!-- ========================================================= -->
 
 
@@ -568,7 +519,12 @@ article,
 
 
 
- <h1>DeTLeng</h1>  
+
+
+<h1 style="font-size:56px;color:#0F52BA;margin-bottom:10px;">
+Case Studies & Resources
+</h1>
+
 
 
 <div style="height:4px;background:#FFD700;width:240px;margin-bottom:30px;"></div>
