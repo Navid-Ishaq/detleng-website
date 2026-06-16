@@ -1,1 +1,923 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon2.png">
+<div style="height:90px;"></div>
+
+<nav class="detleng-nav">
+
+
+
+
+<div class="detleng-logo">
+
+<a href="index.html">
+
+<img src="logodl3.png"
+     alt="DeTLeng"
+     style="height:60px;width:auto;display:block;">
+
+</a>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ======================================================== -->
+<!-- DeTLeng Floating Menu START -->
+<!-- ======================================================== -->
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-icon">
+☰ MENU
+</label>
+
+<div class="menu-links">
+
+<a href="index.html" class="active">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="services.html">Services</a>
+
+<a href="pricing.html">Pricing</a>
+
+<a href="framework.html">Framework</a>
+
+<a href="case-studies.html">Case Studies</a>
+
+<a href="policies.html">Policies</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<!-- ======================================================== -->
+<!-- DeTLeng Floating Menu END -->
+<!-- ======================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+</nav>
+
+<style>
+
+
+
+
+/* Hover Effect */
+nav a {
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #26C6FF;
+}
+
+/* Active Menu Item */
+nav a.active {
+    color: #0047D6;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+     
+/* ===========================
+   DeTLeng Professional Menu
+=========================== */
+
+.detleng-nav{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #ddd;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+    z-index:99999;
+
+    padding:15px 20px;
+
+    box-sizing:border-box;
+
+}
+
+.detleng-logo{
+
+    position:absolute;
+
+    left:20px;
+    top:15px;
+
+    z-index:999;
+
+}
+
+/* Hide Checkbox */
+
+#menu-toggle{
+
+    display:none;
+
+}
+
+/* Menu Icon */
+
+.menu-icon{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    float:right;
+
+    font-weight:700;
+
+}
+
+/* Desktop Menu */
+
+.menu-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:10px;
+
+}
+
+.menu-links a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-weight:600;
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+}
+
+.menu-links a:hover{
+
+    color:#0066ff;
+
+}
+
+/* ===========================
+   Mobile Version
+=========================== */
+
+@media (max-width:768px){
+
+    .menu-icon{
+
+        display:block;
+
+        text-align:right;
+
+        font-size:28px;
+
+    }
+
+    .menu-links{
+
+        display:none;
+
+        flex-direction:column;
+
+        position:absolute;
+
+        top:70px;
+
+        right:15px;
+
+        background:#ffffff;
+
+        padding:20px;
+
+        border-radius:12px;
+
+        box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+        min-width:140px;
+
+        text-align:right;
+
+        gap:15px;
+
+        z-index:99999;
+
+    }
+
+    .menu-links a{
+
+        display:block;
+
+        font-size:18px;
+
+        color:#111;
+
+    }
+
+    #menu-toggle:checked ~ .menu-links{
+
+        display:flex;
+
+    }
+
+}
+/* ===========================
+   DeTLeng Readability
+=========================== */
+
+body{
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+    color:#222;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* Paragraphs */
+
+p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    margin-bottom:20px;
+
+}
+
+/* Lists */
+
+li{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#333;
+
+}
+
+/* Headings */
+
+h1{
+
+    font-size:52px;
+
+    color:#111;
+
+}
+
+h2{
+
+    font-size:38px;
+
+    color:#111;
+
+}
+
+h3{
+
+    font-size:28px;
+
+    color:#111;
+
+}
+
+/* Mobile Headings */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+}
+
+</style>
+
+
+
+
+
+<style>
+
+/* ===========================
+   DeTLeng Content Layout
+=========================== */
+
+.detleng-content{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.detleng-content p{
+    max-width:850px;
+    font-size:18px;
+    line-height:1.9;
+    color:#333333;
+    margin-bottom:20px;
+}
+
+.detleng-content ul{
+    padding-left:25px;
+}
+
+.detleng-content li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+h1{
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.detleng-content h1{
+    font-size:52px;
+    color:#111111;
+}
+
+.detleng-content h2{
+    font-size:38px;
+    color:#111111;
+    margin-top:50px;
+}
+
+.detleng-content h3{
+    font-size:28px;
+    color:#111111;
+    margin-top:20px;
+}
+
+.detleng-content h4{
+    font-size:22px;
+    color:#111111;
+    margin-top:25px;
+}
+
+.detleng-content hr{
+    margin:40px 0;
+    border:none;
+    border-top:1px solid #dddddd;
+}
+
+@media (max-width:768px){
+
+.detleng-content{
+    padding:15px;
+}
+
+.detleng-content h1{
+    font-size:42px;
+}
+
+.detleng-content h2{
+    font-size:30px;
+}
+
+.detleng-content h3{
+    font-size:24px;
+}
+
+.detleng-content p,
+.detleng-content li{
+    font-size:17px;
+}
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<section class="detleng-content">
+
+
+
+
+
+<h1 style="font-size:56px;color:#0F52BA;margin-bottom:10px;">
+Case Studies & Resources
+</h1>
+
+
+
+<div style="height:4px;background:#FFD700;width:240px;margin-bottom:30px;"></div>
+
+<h2 style="color:#0F52BA;">
+Real Projects. Real Data. Real Business Value.
+</h2>
+
+<p style="font-size:22px;color:#555;max-width:1000px;line-height:1.8;">
+The <strong style="color:#2563eb;">DeTLeng</strong> Case Study Library showcases practical implementations across Data Engineering, ETL Development, Analytics Engineering, Data Warehousing, Reporting Automation, and Business Intelligence.
+</p>
+
+<p style="font-size:22px;color:#555;max-width:1000px;line-height:1.8;">
+Each case study demonstrates how raw business data can be transformed into reliable, analytics-ready datasets that support reporting, business insights, and decision-making.
+</p>
+
+<div style="
+background:#0F52BA;
+color:white;
+padding:35px;
+border-radius:12px;
+margin:40px 0;
+text-align:center;
+">
+
+<h2 style="color:white;margin-top:0;">
+Explore the Complete <strong style="color:yellow;">DeTLeng</strong> Case Study Library
+</h2>
+
+<p style="font-size:20px;">
+<p style="color: white;">Browse published projects, technical implementations, business insights, and real-world data engineering solutions.</p>
+   
+</p>
+
+<a href="https://casestudy.detleng.com/"
+target="_blank"
+style="
+display:inline-block;
+background:#FFD700;
+color:#111;
+padding:16px 28px;
+text-decoration:none;
+font-weight:700;
+border-radius:8px;
+margin-top:15px;
+font-size:18px;
+">
+👉 Visit DeTLeng Case Studies →
+</a>
+
+</div>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<h2 style="color:#0F52BA;">
+Why We Publish Case Studies
+</h2>
+
+<p>
+At <strong style="color:#2563eb;">DeTLeng</strong>, we believe that expertise is best demonstrated through practical implementation rather than theoretical discussion.
+</p>
+
+<p>
+Every completed project is documented to capture business requirements, technical decisions, implementation processes, validation activities, business outcomes, and lessons learned.
+</p>
+
+<p>
+This approach creates a growing library of real-world experience that demonstrates how data engineering and analytics solutions can deliver measurable business value.
+</p>
+
+<div style="
+background:#F8FAFC;
+border-left:6px solid #0F52BA;
+padding:25px;
+border-radius:8px;
+margin:30px 0;
+">
+
+<p style="font-size:20px;margin:0;">
+<strong>
+Case studies are not simply project summaries.
+</strong>
+</p>
+
+<p style="font-size:18px;margin-top:15px;margin-bottom:0;">
+They are practical demonstrations of how business problems are solved through structured data engineering, analytics, and reporting methodologies.
+</p>
+
+</div>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<h2 style="color:#0F52BA;">
+The DeTLeng Learning Philosophy
+</h2>
+
+<p>
+Continuous learning at <strong style="color:#2563eb;">DeTLeng</strong> is driven through practical implementation.
+</p>
+
+<p>
+Projects are executed, documented, validated, and transformed into published case studies that preserve both technical execution details and business outcomes.
+</p>
+
+<p>
+This methodology helps strengthen expertise while creating reusable frameworks, technical documentation, implementation patterns, and business knowledge.
+</p>
+
+<div style="
+background:#f8fafc;
+border:1px solid #dbe4ee;
+padding:25px;
+border-radius:10px;
+overflow:auto;
+">
+
+<pre style="margin:0;font-size:18px;line-height:2;">
+
+Project Execution
+        ↓
+Technical Documentation
+        ↓
+Validation & Testing
+        ↓
+Business Insights
+        ↓
+Case Study Development
+        ↓
+Knowledge Repository
+
+</pre>
+
+</div>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<h2 style="color:#0F52BA;">
+Current & Planned Case Study Domains
+</h2>
+
+<p>
+The <strong style="color:#2563eb;">DeTLeng</strong> Case Study Library continues to expand across a variety of business and analytical domains.
+</p>
+
+<ul>
+
+<li>Retail Analytics</li>
+
+<li>E-Commerce Analytics</li>
+
+<li>Marketing Analytics</li>
+
+<li>Customer Analytics</li>
+
+<li>HR Analytics</li>
+
+<li>Financial Analytics</li>
+
+<li>Supply Chain Analytics</li>
+
+<li>Operations Analytics</li>
+
+<li>Cloud Data Warehousing</li>
+
+<li>Data Engineering</li>
+
+<li>ETL & ELT Development</li>
+
+<li>Business Intelligence</li>
+
+<li>Reporting Automation</li>
+
+</ul>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<h2 style="color:#0F52BA;">
+The DeTLeng Case Study Framework
+</h2>
+
+<p>
+Each project follows a structured methodology designed to ensure consistency, reliability, and business relevance.
+</p>
+
+<div style="
+background:#f8fafc;
+border:1px solid #dbe4ee;
+padding:25px;
+border-radius:10px;
+overflow:auto;
+">
+
+<pre style="margin:0;font-size:18px;line-height:2;">
+
+Business Problem
+        ↓
+Source Data
+        ↓
+Data Assessment
+        ↓
+ETL Development
+        ↓
+Data Validation
+        ↓
+Analytics Dataset
+        ↓
+Business KPIs
+        ↓
+Business Insights
+        ↓
+Case Study Documentation
+
+</pre>
+
+</div>
+
+<p>
+This framework allows technical implementation and business outcomes to be documented together, creating a complete picture of each project.
+</p>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<h2 style="color:#0F52BA;">
+What You'll Find In Our Case Studies
+</h2>
+
+<ul>
+
+<li>Business Problems & Objectives</li>
+
+<li>Source Data Assessment</li>
+
+<li>Data Engineering Methodologies</li>
+
+<li>ETL & ELT Development</li>
+
+<li>BigQuery Implementations</li>
+
+<li>SQL Transformations</li>
+
+<li>Data Validation Techniques</li>
+
+<li>Analytics Dataset Design</li>
+
+<li>KPI Development</li>
+
+<li>Business Insights</li>
+
+<li>Architecture Diagrams</li>
+
+<li>Lessons Learned</li>
+
+</ul>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<div style="
+background:#0F52BA;
+color:white;
+padding:40px;
+border-radius:12px;
+text-align:center;
+">
+
+<h2 style="color:white;">
+The DeTLeng Principle
+</h2>
+
+<h2 style="color:#FFD700;">
+We Don't Just Build Dashboards.
+</h2>
+
+<h2 style="color:#FFD700;">
+We Engineer the Data That Makes Dashboards Trustworthy.
+</h2>
+
+<p style="font-size:20px;margin-top:25px;">
+<p style="color: white;">From Raw Data to Analytics-Ready Data.</p>
+</p>
+
+<p style="font-size:20px;">
+<p style="color: white;">From Complexity to Clarity.</p>
+</p>
+
+<p style="font-size:20px;">
+<p style="color: white;">From Data Engineering to Business Value.</p>
+</p>
+
+</div>
+
+<hr style="margin:60px 0;border:0;height:1px;background:#ddd;">
+
+<div style="
+background:#F8FAFC;
+border:2px solid #0F52BA;
+padding:40px;
+border-radius:12px;
+">
+
+<h2 style="color:#0F52BA;margin-top:0;">
+Explore Our Latest Implementations
+</h2>
+
+<p>
+Visit the <strong style="color:#2563eb;">DeTLeng</strong> Case Study Library to explore published projects, implementation methodologies, technical documentation, and business insights.
+</p>
+
+<p>
+Each case study demonstrates how structured data engineering and analytics practices can transform raw information into measurable business value.
+</p>
+
+<a href="https://casestudy.detleng.com/"
+target="_blank"
+style="
+display:inline-block;
+background:#0F52BA;
+color:white;
+padding:16px 28px;
+text-decoration:none;
+font-weight:700;
+border-radius:8px;
+margin-top:10px;
+">
+👉 Visit DeTLeng Case Studies →
+</a>
+
+</div>
+
+
+</section>
+
+
+
+     
+
+   
+
+
+
+
+<div style="
+max-width:900px;
+margin:30px auto;
+text-align:center;
+">
+
+<a href="mailto:info@DeTLeng.com?subject=Data Project Inquiry&body=Hello DeTLeng Team,%0D%0A%0D%0AMy name is ________________.%0D%0A%0D%0AI would like assistance with a data-related project. Please find the project details below:%0D%0A%0D%0AProject Type: ________________%0D%0AData Source (CSV/Excel/Database): ________________%0D%0AExpected Outcome: ________________%0D%0ADeadline (Optional): ________________%0D%0AAdditional Requirements: ________________%0D%0A%0D%0AI look forward to hearing from you.%0D%0A%0D%0ARegards,"
+style="
+display:block;
+background:blue;
+color:#ffffff;
+font-size:28px;
+font-weight:bold;
+text-decoration:none;
+padding:25px;
+border-radius:8px;
+animation:blink 1.5s infinite;
+">
+
+
+<span class="detleng-finger">👉</span>
+Get Started with <strong style="color:yellow;">DeTLeng</strong>
+<span class="detleng-finger">👈</span>
+
+</a>
+
+</div>
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+<style>
+/* DeTLeng Sticky Consultation Button */
+
+.detleng-sticky-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    background:linear-gradient(
+        135deg,
+        #0033CC 0%,
+        #005BFF 50%,
+        #33D6FF 100%
+    );
+
+    color:#FFD700;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+    text-decoration:none;
+
+    font-family:Inter,sans-serif;
+    font-size:18px;
+    font-weight:700;
+
+    box-shadow:
+    0 4px 15px rgba(0,91,255,0.35),
+    0 0 12px rgba(255,215,0,0.30);
+
+    z-index:99999;
+
+    transition:all .3s ease;
+}
+
+.detleng-sticky-btn:hover{
+    background: linear-gradient(
+    135deg,
+    #003FC7 0%,
+    #0A63FF 70%,
+    #F7941D 100%
+);
+    transform:translateY(-2px);
+}
+
+/* Mobile Friendly */
+@media (max-width:768px){
+
+.detleng-sticky-btn{
+    bottom:10px;
+    right:10px;
+
+    padding:14px 20px;
+
+    font-size:16px;
+
+    border-radius:10px;
+}
+}
+
+</style>
+
+<a class="detleng-sticky-btn"
+href="mailto:info@detleng.com?subject=Free%20Consultation%20Request&body=Hello%20DeTLeng%20Team,%0D%0A%0D%0AMy%20name%20is:%20________________%0D%0A%0D%0AI%20would%20like%20a%20free%20consultation%20regarding:%0D%0A%0D%0AProject%20Type:%20________________%0D%0AData%20Source:%20________________%0D%0AExpected%20Outcome:%20________________%0D%0ADeadline:%20________________%0D%0AAdditional%20Requirements:%20________________%0D%0A%0D%0ARegards,%0D%0A________________">
+
+👉 <span style="color:white;">Consult |</span> <span style="color:#FFD700;"> DeTLeng</span>
+
+</a>
+
+
+
+
+
+</body>
+</html>
 
