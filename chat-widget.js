@@ -208,6 +208,7 @@ color:#374151;
 
 
 
+
 <div style="
 margin-top:18px;
 padding:16px;
@@ -220,18 +221,20 @@ line-height:1.7;
 border:1px solid #bfdbfe;
 ">
 
-🚀 <strong>AI Assistant Launching Soon</strong>
+🚀 <strong>DeTLeng AI Assistant Coming Soon</strong>
 
 <br><br>
 
-We are building an intelligent AI assistant to help you with
-AI Agents, Business Automation, Data Engineering and Cloud Solutions.
+We're building an intelligent assistant to help you with
+Data Engineering, ETL Solutions, BigQuery, SQL Analytics, and Business Intelligence.
 
 <br><br>
 
-✨ Stay tuned — exciting features are coming very soon.
+✨ Transforming raw data into trusted business insights.
 
 </div>
+
+
 
 </div>
 
