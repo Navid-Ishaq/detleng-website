@@ -117,7 +117,7 @@ font-weight:700;
 line-height:1.2;
 ">
 
-🤖 Agents DeTLeng
+🤖 DeTLeng
 
 </div>
 
@@ -128,7 +128,7 @@ margin-top:5px;
 letter-spacing:.3px;
 ">
 
-Your Intelligent AI Assistant
+Transforming Intelligence into Action
 
 </div>
 
@@ -161,6 +161,7 @@ color:#111827;
 margin-bottom:12px;
 ">
 
+
 👋 Hello!
 
 </div>
@@ -173,7 +174,7 @@ margin:0;
 ">
 
 Thank you for visiting
-<b>Agents DeTLeng.</b>
+<b>DeTLeng.</b>
 
 <br><br>
 
@@ -191,19 +192,21 @@ line-height:2;
 color:#374151;
 ">
 
-<li>🤖 AI Agents</li>
+<li>⚙ Data Engineering</li>
 
-<li>⚙ Business Automation</li>
+<li>🔄 ETL Solutions</li>
 
-<li>📊 Data Engineering</li>
+<li>📊 Analytics Engineering</li>
 
-<li>🔄 ETL Pipelines</li>
+<li>☁ BigQuery & Cloud Data</li>
 
-<li>☁ Cloud Solutions</li>
+<li>📈 Business Intelligence</li>
 
-<li>💡 AI Consulting</li>
+<li>💡 Data Consulting</li>
 
 </ul>
+
+
 
 <div style="
 margin-top:18px;
