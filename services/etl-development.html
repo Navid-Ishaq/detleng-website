@@ -1,0 +1,757 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="../favicon2.png">
+<div style="height:90px;"></div>
+
+<nav class="detleng-nav">
+
+
+
+
+<div class="detleng-logo">
+
+<a href="../index.html">
+
+<img src="../logodl3.png"
+     alt="DeTLeng"
+     style="height:60px;width:auto;display:block;">
+
+</a>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ======================================================== -->
+<!-- DeTLeng Floating Menu START -->
+<!-- ======================================================== -->
+
+<input type="checkbox" id="menu-toggle">
+
+<label for="menu-toggle" class="menu-icon">
+☰ MENU
+</label>
+
+<div class="menu-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../about.html">About</a>
+
+<a href="../services.html" class="active">Services</a>
+
+<a href="../pricing.html">Pricing</a>
+
+<a href="../framework.html">Framework</a>
+
+<a href="../case-studies.html">Case Studies</a>
+
+<a href="../policies.html">Policies</a>
+
+<a href="../contact.html">Contact</a>
+
+<a href="https://insights.detleng.com/" target="_blank"
+style="color:#E67E22;font-weight:700;">
+DeTLeng Insights →
+</a>
+
+</div>
+
+<!-- ======================================================== -->
+<!-- DeTLeng Floating Menu END -->
+<!-- ======================================================== -->
+
+  
+
+</nav>
+
+<style>
+
+
+
+
+/* Hover Effect */
+nav a {
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #26C6FF;
+}
+
+/* Active Menu Item */
+nav a.active {
+    color: #0047D6;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+     
+/* ===========================
+   DeTLeng Professional Menu
+=========================== */
+
+.detleng-nav{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #ddd;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+    z-index:99999;
+
+    padding:15px 20px;
+
+    box-sizing:border-box;
+
+}
+
+.detleng-logo{
+
+    position:absolute;
+
+    left:20px;
+    top:15px;
+
+    z-index:999;
+
+}
+
+/* Hide Checkbox */
+
+#menu-toggle{
+
+    display:none;
+
+}
+
+/* Menu Icon */
+
+.menu-icon{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    float:right;
+
+    font-weight:700;
+
+}
+
+/* Desktop Menu */
+
+.menu-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:10px;
+
+}
+
+.menu-links a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-weight:600;
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+}
+
+.menu-links a:hover{
+
+    color:#0066ff;
+
+}
+
+/* ===========================
+   Mobile Version
+=========================== */
+
+@media (max-width:768px){
+
+    .menu-icon{
+
+        display:block;
+
+        text-align:right;
+
+        font-size:28px;
+
+    }
+
+    .menu-links{
+
+        display:none;
+
+        flex-direction:column;
+
+        position:absolute;
+
+        top:70px;
+
+        right:15px;
+
+        background:#ffffff;
+
+        padding:20px;
+
+        border-radius:12px;
+
+        box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+        min-width:140px;
+
+        text-align:right;
+
+        gap:15px;
+
+        z-index:99999;
+
+    }
+
+    .menu-links a{
+
+        display:block;
+
+        font-size:18px;
+
+        color:#111;
+
+    }
+
+    #menu-toggle:checked ~ .menu-links{
+
+        display:flex;
+
+    }
+
+}
+/* ===========================
+   DeTLeng Readability
+=========================== */
+
+body{
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+    color:#222;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* Paragraphs */
+
+p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    margin-bottom:20px;
+
+}
+
+/* Lists */
+
+li{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#333;
+
+}
+
+/* Headings */
+
+h1{
+
+    font-size:52px;
+
+    color:#111;
+
+}
+
+h2{
+
+    font-size:38px;
+
+    color:#111;
+
+}
+
+h3{
+
+    font-size:28px;
+
+    color:#111;
+
+}
+
+/* Mobile Headings */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+}
+
+</style>
+
+
+
+
+
+<style>
+
+/* ===========================
+   DeTLeng Content Layout
+=========================== */
+
+.detleng-content{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.detleng-content p{
+    max-width:850px;
+    font-size:18px;
+    line-height:1.9;
+    color:#333333;
+    margin-bottom:20px;
+}
+
+.detleng-content ul{
+    padding-left:25px;
+}
+
+.detleng-content li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+h1{
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.detleng-content h1{
+    font-size:52px;
+    color:#111111;
+}
+
+.detleng-content h2{
+    font-size:38px;
+    color:#111111;
+    margin-top:50px;
+}
+
+.detleng-content h3{
+    font-size:28px;
+    color:#111111;
+    margin-top:20px;
+}
+
+.detleng-content h4{
+    font-size:22px;
+    color:#111111;
+    margin-top:25px;
+}
+
+.detleng-content hr{
+    margin:40px 0;
+    border:none;
+    border-top:1px solid #dddddd;
+}
+
+@media (max-width:768px){
+
+.detleng-content{
+    padding:15px;
+}
+
+.detleng-content h1{
+    font-size:42px;
+}
+
+.detleng-content h2{
+    font-size:30px;
+}
+
+.detleng-content h3{
+    font-size:24px;
+}
+
+.detleng-content p,
+.detleng-content li{
+    font-size:17px;
+}
+
+}
+
+</style>
+
+<section class="detleng-content">
+  
+  
+<!-- ========================= -->
+<!-- START PAGE CONTENT -->
+<!-- ========================= -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- END PAGE CONTENT -->
+<!-- ========================= -->
+
+
+<!-- ===== START DETLENG AUTHOR SIGNATURE BLOCK 1 ===== -->
+
+     
+<div class="detleng-ecosystem-block" style="padding:40px 20px; background:#ffffff; text-align:center;">
+
+  <h2 style="color:#2563eb; font-size:2rem; font-weight:800; margin:0 0 12px 0;">
+    The <strong style="color:#2563eb;">DeTLeng Ecosystem</strong>
+  </h2>
+
+  <div style="width:90px; height:4px; background:linear-gradient(90deg,#f59e0b,#facc15); margin:0 auto 35px auto; border-radius:999px;"></div>
+
+  <div style="max-width:1300px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:22px;">
+
+
+<div style="background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px 20px; box-shadow:0 6px 18px rgba(15,23,42,0.06);">
+  <h3 style="color:#2563eb; font-size:1.2rem; font-weight:800; margin:0 0 10px 0;">
+    <strong style="color:#2563eb;">DeTLeng</strong>
+  </h3>
+  <p style="margin:0 0 10px 0; font-weight:700; color:#111827;">
+    www.detleng.com
+  </p>
+  <p style="margin:0; color:#475569; line-height:1.7;">
+    Data Engineering • ETL • Analytics • Business Intelligence
+  </p>
+</div>
+
+<div style="background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px 20px; box-shadow:0 6px 18px rgba(15,23,42,0.06);">
+  <h3 style="color:#2563eb; font-size:1.2rem; font-weight:800; margin:0 0 10px 0;">
+    Insights
+  </h3>
+  <p style="margin:0 0 10px 0; font-weight:700; color:#111827;">
+    insights.detleng.com
+  </p>
+  <p style="margin:0; color:#475569; line-height:1.7;">
+    Research • Articles • Knowledge Hub
+  </p>
+</div>
+
+<div style="background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px 20px; box-shadow:0 6px 18px rgba(15,23,42,0.06);">
+  <h3 style="color:#2563eb; font-size:1.2rem; font-weight:800; margin:0 0 10px 0;">
+    Case Studies
+  </h3>
+  <p style="margin:0 0 10px 0; font-weight:700; color:#111827;">
+    casestudy.detleng.com
+  </p>
+  <p style="margin:0; color:#475569; line-height:1.7;">
+    Projects • Implementations • Success Stories
+  </p>
+</div>
+
+<div style="background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px 20px; box-shadow:0 6px 18px rgba(15,23,42,0.06);">
+  <h3 style="color:#2563eb; font-size:1.2rem; font-weight:800; margin:0 0 10px 0;">
+    Inteligencia DeTLeng
+  </h3>
+  <p style="margin:0 0 10px 0; font-weight:700; color:#111827;">
+    inteligencia.detleng.com
+  </p>
+  <p style="margin:0; color:#475569; line-height:1.7;">
+    Knowledge • Insights • Applied Intelligence
+  </p>
+</div>
+
+<div style="background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px 20px; box-shadow:0 6px 18px rgba(15,23,42,0.06);">
+  <h3 style="color:#2563eb; font-size:1.2rem; font-weight:800; margin:0 0 10px 0;">
+    Agents DeTLeng
+  </h3>
+  <p style="margin:0 0 10px 0; font-weight:700; color:#111827;">
+    agents.detleng.com
+  </p>
+  <p style="margin:0; color:#475569; line-height:1.7;">
+    AI Agents • Automation • Intelligent Workflows
+  </p>
+</div>
+
+       
+
+  </div>
+
+  <p style="margin:35px 0 0 0; color:#64748b; font-size:0.95rem;">
+    © <strong style="color:#2563eb;">DeTLeng Ecosystem</strong>
+  </p>
+
+</div>
+
+<!-- ===== END DETLENG AUTHOR SIGNATURE BLOCK 1 ===== -->
+
+
+
+
+
+
+
+
+<!-- ===== START DETLENG AUTHOR SIGNATURE BLOCK 2 ===== -->
+
+
+<div style="margin:40px 0 20px 0;padding:28px;border-radius:18px;background:linear-gradient(135deg,#f8fbff,#eef6ff);border:1px solid #dbeafe;box-shadow:0 6px 18px rgba(0,0,0,0.08);text-align:center;">
+
+  <h3 style="margin:0 0 12px 0;font-size:30px;color:#111827;">
+    <span style="color:#2563eb;">About DeTLeng</span>
+  </h3>
+
+  <p style="margin:0 0 18px 0;font-size:18px;line-height:1.8;color:#374151;">
+    <span style="color:#16a34a;font-weight:700;">DeTLeng Ecosystem</span><br><br>
+    Data Engineering • AI Agents • Automation • Applied Intelligence
+  </p>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin-top:15px;">
+
+    <a href="https://www.detleng.com" target="_blank"
+       style="text-decoration:none;padding:10px 16px;border-radius:50px;background:#2563eb;color:#fff;font-weight:600;">
+       🌐 DeTLeng
+    </a>
+
+    <a href="https://casestudy.detleng.com" target="_blank"
+       style="text-decoration:none;padding:10px 16px;border-radius:50px;background:#10b981;color:#fff;font-weight:600;">
+       📊 Case Studies
+    </a>
+
+    <a href="https://inteligencia.detleng.com" target="_blank"
+       style="text-decoration:none;padding:10px 16px;border-radius:50px;background:#8b5cf6;color:#fff;font-weight:600;">
+       🧠 Inteligencia
+    </a>
+
+    <a href="https://agents.detleng.com" target="_blank"
+       style="text-decoration:none;padding:10px 16px;border-radius:50px;background:#f97316;color:#fff;font-weight:600;">
+       🤖 AI Agents
+    </a>
+
+    <a href="https://insights.detleng.com" target="_blank"
+       style="text-decoration:none;padding:10px 16px;border-radius:50px;background:#06b6d4;color:#fff;font-weight:600;">
+       💡 Insights
+    </a>
+
+  </div>
+
+  <div style="margin-top:22px;padding-top:18px;border-top:1px solid #dbeafe;text-align:center;">
+
+    <p style="margin:0;font-size:15px;line-height:1.8;color:#64748b;">
+      Transform Complexity into Clarity • Transform Information into Understanding • Transform Knowledge into Value
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ===== END DETLENG AUTHOR SIGNATURE BLOCK 2 ===== -->
+
+
+
+   
+</section>
+
+
+
+
+
+
+
+     
+
+<div style="
+max-width:900px;
+margin:30px auto;
+text-align:center;
+">
+
+<a href="mailto:info@DeTLeng.com?subject=Data Project Inquiry&body=Hello DeTLeng Team,%0D%0A%0D%0AMy name is ________________.%0D%0A%0D%0AI would like assistance with a data-related project. Please find the project details below:%0D%0A%0D%0AProject Type: ________________%0D%0AData Source (CSV/Excel/Database): ________________%0D%0AExpected Outcome: ________________%0D%0ADeadline (Optional): ________________%0D%0AAdditional Requirements: ________________%0D%0A%0D%0AI look forward to hearing from you.%0D%0A%0D%0ARegards,"
+style="
+display:block;
+background:blue;
+color:#ffffff;
+font-size:28px;
+font-weight:bold;
+text-decoration:none;
+padding:25px;
+border-radius:8px;
+animation:blink 1.5s infinite;
+">
+
+
+<span class="detleng-finger">👉</span>
+Explore how <strong style="color:yellow;">DeTLeng </strong>transforms raw data into business value
+<span class="detleng-finger">👈</span>
+
+</a>
+
+</div>
+
+
+
+
+
+
+
+<br><br><br>
+
+
+<style>
+
+.detleng-sticky-btn{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+
+    background:linear-gradient(
+        135deg,
+        #0033CC 0%,
+        #005BFF 50%,
+        #33D6FF 100%
+    );
+
+    color:#FFD700;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+    text-decoration:none;
+
+    font-family:Inter,sans-serif;
+    font-size:18px;
+    font-weight:700;
+
+    box-shadow:
+    0 4px 15px rgba(0,91,255,0.35),
+    0 0 12px rgba(255,215,0,0.30);
+
+    z-index:99999;
+
+    transition:all .3s ease;
+}
+
+.detleng-sticky-btn:hover{
+    background:linear-gradient(
+        135deg,
+        #003FC7 0%,
+        #0A63FF 70%,
+        #F7941D 100%
+    );
+    transform:translateY(-2px);
+}
+
+@media (max-width:768px){
+
+.detleng-sticky-btn{
+    bottom:10px;
+    left:10px;
+
+    padding:14px 20px;
+    font-size:16px;
+    border-radius:10px;
+}
+
+}
+</style>
+
+
+<a class="detleng-sticky-btn"
+href="mailto:info@detleng.com?subject=Free%20Consultation%20Request&body=Hello%20DeTLeng%20Team,%0D%0A%0D%0AMy%20name%20is:%0D%0A%0D%0AI%20would%20like%20to%20discuss%20the%20following%20project:%0D%0A%0D%0AProject%20Type:%0D%0A%0D%0AProject%20Description:%0D%0A%0D%0AData%20Source%20(CSV,%20Excel,%20Database,%20etc.):%0D%0A%0D%0AExpected%20Outcome:%0D%0A%0D%0AProject%20Deadline%20(if%20applicable):%0D%0A%0D%0AAdditional%20Requirements:%0D%0A%0D%0AThank%20you%20for%20your%20time.%20I%20look%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0AKind%20regards,">
+
+
+<div style="text-align:center; line-height:1.4;">
+
+👇📩 <span style="color:white;">Talk</span><br>
+<span style="color:white;"> * </span>
+<span style="color:white;">DeTLeng</span>
+
+</div>
+
+</a>
+
+
+<script src="/chat-widget.js"></script>  
+</body>
+</html>
