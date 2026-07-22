@@ -1,0 +1,393 @@
+/* DeTLeng shared website design system
+   Aligned with the DeTLeng Platform dashboard visual language. */
+
+:root {
+  --dt-blue: #0754a6;
+  --dt-blue-dark: #073e79;
+  --dt-blue-soft: #eaf3fc;
+  --dt-gold: #f2b705;
+  --dt-ink: #172033;
+  --dt-muted: #627087;
+  --dt-line: #dfe6ef;
+  --dt-surface: #ffffff;
+  --dt-background: #f5f7fa;
+  --dt-shadow: 0 16px 45px rgba(14, 37, 66, 0.09);
+  --dt-shadow-small: 0 6px 20px rgba(14, 37, 66, 0.06);
+  --dt-radius: 18px;
+  --dt-radius-small: 12px;
+  --dt-nav-height: 76px;
+  --dt-content-width: 1160px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--dt-background);
+}
+
+body {
+  margin: 0;
+  color: var(--dt-ink);
+  background: var(--dt-background);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--dt-blue); }
+
+a:hover { color: var(--dt-blue-dark); }
+
+::selection { color: #fff; background: var(--dt-blue); }
+
+.detleng-nav {
+  min-height: var(--dt-nav-height) !important;
+  padding: 0 max(20px, calc((100% - var(--dt-content-width)) / 2)) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid rgba(223, 230, 239, 0.9) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(12px);
+}
+
+.detleng-logo img {
+  width: auto !important;
+  max-height: 48px !important;
+  object-fit: contain;
+}
+
+.menu-links { gap: 8px !important; }
+
+.menu-links a {
+  padding: 10px 14px !important;
+  color: #46546a !important;
+  border-radius: 10px !important;
+  font-size: 0.9rem !important;
+  font-weight: 650 !important;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-links a:hover {
+  color: var(--dt-blue) !important;
+  background: var(--dt-blue-soft) !important;
+}
+
+.menu-links a.active {
+  color: #fff !important;
+  background: var(--dt-blue) !important;
+}
+
+.detleng-content {
+  width: min(var(--dt-content-width), calc(100% - 40px)) !important;
+  max-width: var(--dt-content-width) !important;
+  margin: 0 auto !important;
+  padding: 72px 0 88px !important;
+  color: var(--dt-ink);
+  background: transparent !important;
+}
+
+.detleng-content > :first-child { margin-top: 0; }
+
+.detleng-content h1,
+.detleng-content h2,
+.detleng-content h3,
+.detleng-content h4 {
+  color: var(--dt-ink) !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  text-wrap: balance;
+}
+
+.detleng-content h1 {
+  max-width: 900px;
+  margin-bottom: 22px !important;
+  font-size: clamp(2.7rem, 5.4vw, 4.8rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.055em !important;
+}
+
+.detleng-content h2 {
+  margin-top: 64px !important;
+  margin-bottom: 18px !important;
+  font-size: clamp(1.75rem, 3vw, 2.55rem) !important;
+  line-height: 1.16 !important;
+  letter-spacing: -0.035em;
+}
+
+.detleng-content h3 {
+  margin-bottom: 10px !important;
+  font-size: 1.25rem !important;
+  line-height: 1.3 !important;
+}
+
+.detleng-content p {
+  max-width: 900px;
+  color: var(--dt-muted) !important;
+}
+
+.detleng-content strong { color: var(--dt-ink); }
+
+.detleng-content > div:first-of-type > p:first-of-type,
+.detleng-header p,
+.detleng-hero p,
+.detleng-tagline {
+  max-width: 760px !important;
+  color: var(--dt-muted) !important;
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem) !important;
+}
+
+.detleng-content ul,
+.detleng-content ol {
+  max-width: 920px;
+  padding-left: 1.3rem;
+}
+
+.detleng-content li {
+  margin: 0.45rem 0;
+  color: #536176;
+}
+
+.detleng-content li::marker { color: var(--dt-blue); }
+
+.detleng-content hr {
+  height: 1px !important;
+  margin: 64px 0 !important;
+  border: 0 !important;
+  background: var(--dt-line) !important;
+}
+
+.detleng-content pre {
+  margin: 0 !important;
+  color: #34445a;
+  font: 600 clamp(0.78rem, 1.4vw, 1rem)/1.9 "Segoe UI", Arial, sans-serif !important;
+  white-space: pre-wrap;
+}
+
+/* Existing content panels and cards: visually normalized without changing markup. */
+.detleng-content div[style*="border-radius"],
+.detleng-card,
+.detleng-highlight,
+.detleng-principle {
+  border-color: var(--dt-line) !important;
+  border-radius: var(--dt-radius) !important;
+  box-shadow: var(--dt-shadow-small) !important;
+}
+
+.detleng-content div[style*="background:#f5f7fa"],
+.detleng-content div[style*="background:#f8fafc"],
+.detleng-content div[style*="background:#F8FAFC"],
+.detleng-content div[style*="background: #f8fafc"] {
+  background: var(--dt-surface) !important;
+}
+
+.detleng-content div[style*="background:#0F52BA"],
+.detleng-content div[style*="background:blue"] {
+  background: linear-gradient(125deg, #092f5e, var(--dt-blue)) !important;
+}
+
+.detleng-content div[style*="border-left"] {
+  border-left: 4px solid var(--dt-gold) !important;
+}
+
+.detleng-card {
+  padding: 28px !important;
+  background: var(--dt-surface) !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.detleng-card:hover {
+  border-color: #b7cce4 !important;
+  box-shadow: var(--dt-shadow) !important;
+  transform: translateY(-4px);
+}
+
+.detleng-grid,
+.detleng-services,
+.detleng-flow {
+  gap: 20px !important;
+}
+
+.detleng-header,
+.detleng-hero {
+  position: relative;
+  padding: 54px 44px !important;
+  overflow: hidden;
+  border: 1px solid var(--dt-line) !important;
+  border-radius: 24px !important;
+  background: radial-gradient(circle at 82% 18%, rgba(7, 84, 166, 0.12), transparent 33%), linear-gradient(135deg, #fff 0%, #f4f8fc 100%) !important;
+  box-shadow: var(--dt-shadow-small);
+}
+
+.detleng-header::before,
+.detleng-hero::before {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 74px;
+  height: 74px;
+  border-top: 3px solid var(--dt-gold);
+  border-left: 3px solid var(--dt-gold);
+  border-radius: 24px 0 0;
+  content: "";
+}
+
+.service-link,
+.case-link,
+.cta-button,
+.detleng-buttons a,
+.detleng-content a[style*="padding"] {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 21px !important;
+  color: #fff !important;
+  background: var(--dt-blue) !important;
+  border: 1px solid var(--dt-blue) !important;
+  border-radius: var(--dt-radius-small) !important;
+  box-shadow: 0 9px 24px rgba(7, 84, 166, 0.18) !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.service-link:hover,
+.case-link:hover,
+.cta-button:hover,
+.detleng-buttons a:hover,
+.detleng-content a[style*="padding"]:hover {
+  color: #fff !important;
+  background: var(--dt-blue-dark) !important;
+  border-color: var(--dt-blue-dark) !important;
+  transform: translateY(-2px);
+}
+
+.detleng-ecosystem-block {
+  width: min(var(--dt-content-width), calc(100% - 40px));
+  max-width: var(--dt-content-width) !important;
+  margin: 0 auto 52px !important;
+  padding: 52px 0 !important;
+  background: transparent !important;
+  border-top: 1px solid var(--dt-line);
+}
+
+.detleng-ecosystem-block > div[style*="display:grid"] > div {
+  padding: 26px 22px !important;
+  background: var(--dt-surface) !important;
+  border: 1px solid var(--dt-line) !important;
+  border-radius: var(--dt-radius) !important;
+  box-shadow: var(--dt-shadow-small) !important;
+  text-align: left;
+}
+
+.detleng-ecosystem-block h2,
+.detleng-ecosystem-block h3 { color: var(--dt-ink) !important; }
+
+.detleng-ecosystem-block p { color: var(--dt-muted) !important; }
+
+/* The existing mailto payload and behavior are unchanged; appearance only. */
+.detleng-sticky-btn {
+  left: 20px !important;
+  bottom: 20px !important;
+  min-height: 50px;
+  padding: 0 19px !important;
+  color: #2e260b !important;
+  background: var(--dt-gold) !important;
+  border: 1px solid rgba(114, 87, 0, 0.12) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 10px 30px rgba(91, 70, 4, 0.25) !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2;
+  animation: none !important;
+  transition: transform 0.2s ease, background-color 0.2s ease !important;
+}
+
+.detleng-sticky-btn:hover {
+  color: #2e260b !important;
+  background: #ffcc28 !important;
+  transform: translateY(-3px) !important;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(242, 183, 5, 0.78) !important;
+  outline-offset: 3px !important;
+}
+
+@media (max-width: 900px) {
+  .detleng-content { padding: 54px 0 72px !important; }
+  .detleng-header, .detleng-hero { padding: 42px 30px !important; }
+  .detleng-grid, .detleng-services { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 768px) {
+  :root { --dt-nav-height: 68px; }
+
+  body { font-size: 16px; }
+
+  .detleng-nav { padding: 0 14px !important; }
+
+  .detleng-logo img { max-height: 40px !important; }
+
+  .menu-icon {
+    width: 44px;
+    height: 44px;
+    padding: 9px !important;
+    border: 1px solid var(--dt-line);
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .menu-links {
+    padding: 14px !important;
+    background: #fff !important;
+    border-bottom: 1px solid var(--dt-line) !important;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .menu-links a { padding: 13px 15px !important; }
+
+  .detleng-content,
+  .detleng-ecosystem-block {
+    width: min(100% - 28px, var(--dt-content-width)) !important;
+  }
+
+  .detleng-content { padding: 40px 0 62px !important; }
+
+  .detleng-content h1 { font-size: clamp(2.35rem, 13vw, 3.2rem) !important; }
+
+  .detleng-content h2 { margin-top: 48px !important; }
+
+  .detleng-header,
+  .detleng-hero { padding: 34px 22px !important; }
+
+  .detleng-card { padding: 22px !important; }
+
+  .detleng-content div[style*="padding:40px"],
+  .detleng-content div[style*="padding: 40px"] { padding: 26px !important; }
+
+  .detleng-sticky-btn {
+    left: 12px !important;
+    bottom: 12px !important;
+    min-height: 46px;
+    max-width: calc(100vw - 100px);
+    padding: 0 15px !important;
+    font-size: 0.76rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
