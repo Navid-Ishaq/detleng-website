@@ -505,7 +505,10 @@ a:hover { color: var(--dt-blue-dark); }
   font-size: 0.76rem;
 }
 
-.detleng-footer-bottom p { margin: 0; }
+.detleng-footer-bottom p {
+  margin: 0;
+  color: #fff !important;
+}
 
 .detleng-sticky-btn {
   gap: 9px !important;
