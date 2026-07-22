@@ -507,7 +507,7 @@ a:hover { color: var(--dt-blue-dark); }
 
 .detleng-footer-bottom p {
   margin: 0;
-  color: #fff !important;
+  color: yellow !important;
 }
 
 .detleng-sticky-btn {
