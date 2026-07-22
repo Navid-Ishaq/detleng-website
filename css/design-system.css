@@ -391,3 +391,166 @@ a:hover { color: var(--dt-blue-dark); }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Phase 2 refinement: simpler editorial rhythm and Platform-style footer. */
+.detleng-content {
+  width: min(1080px, calc(100% - 40px)) !important;
+  padding-top: 58px !important;
+}
+
+.detleng-content h1 {
+  max-width: 780px;
+  font-size: clamp(2.45rem, 4.5vw, 3.8rem) !important;
+  letter-spacing: -0.045em !important;
+}
+
+.detleng-content h2 {
+  margin-top: 52px !important;
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem) !important;
+}
+
+.detleng-content p,
+.detleng-content ul,
+.detleng-content ol {
+  max-width: 820px;
+}
+
+.detleng-card,
+.detleng-content div[style*="border-radius"] {
+  box-shadow: 0 5px 18px rgba(17, 37, 62, 0.045) !important;
+}
+
+.detleng-content hr { margin: 52px 0 !important; }
+
+/* Earlier repeated ecosystem/signature presentations are retained in source
+   but replaced visually by one consistent product-ecosystem footer. */
+.detleng-ecosystem-block,
+.detleng-author-signature {
+  display: none !important;
+}
+
+.detleng-site-footer {
+  margin-top: 30px;
+  padding: 58px 0 22px;
+  color: #fff;
+  background: #0e1929;
+}
+
+.detleng-footer-inner {
+  width: min(var(--dt-content-width), calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.detleng-footer-main {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
+  gap: 72px;
+  align-items: start;
+  padding-bottom: 42px;
+}
+
+.detleng-footer-brand img {
+  width: auto;
+  max-height: 46px;
+  padding: 5px;
+  background: #fff;
+}
+
+.detleng-footer-brand p {
+  margin: 18px 0 0;
+  color: #9eabbc;
+  font-size: 0.98rem;
+}
+
+.detleng-footer-links h2 {
+  margin: 4px 0 17px;
+  color: #9eabbc;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.detleng-footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.detleng-footer-links a {
+  color: #e8edf4;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.detleng-footer-links a::after {
+  margin-left: 5px;
+  color: #ffd24a;
+  content: "↗";
+}
+
+.detleng-footer-links a:hover { color: #ffd24a; }
+
+.detleng-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #263347;
+  color: #8592a4;
+  font-size: 0.76rem;
+}
+
+.detleng-footer-bottom p { margin: 0; }
+
+.detleng-sticky-btn {
+  gap: 9px !important;
+  min-width: 132px;
+  justify-content: center !important;
+}
+
+.detleng-support-icon {
+  display: grid;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.76rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .detleng-content {
+    width: min(100% - 28px, 1080px) !important;
+    padding-top: 34px !important;
+  }
+
+  .detleng-content h1 { font-size: clamp(2.2rem, 12vw, 3rem) !important; }
+  .detleng-content h2 { margin-top: 42px !important; }
+
+  .detleng-footer-inner { width: min(100% - 28px, var(--dt-content-width)); }
+
+  .detleng-footer-main {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-bottom: 32px;
+  }
+
+  .detleng-footer-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+  }
+
+  .detleng-footer-bottom { flex-direction: column; }
+
+  .detleng-sticky-btn {
+    min-width: 112px;
+    max-width: none;
+  }
+}
