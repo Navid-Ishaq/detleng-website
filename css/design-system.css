@@ -190,6 +190,53 @@ a:hover { color: var(--dt-blue-dark); }
   background: linear-gradient(125deg, #092f5e, var(--dt-blue)) !important;
 }
 
+/* Keep legacy blue campaign banners readable after the shared typography
+   refresh. These rules are deliberately scoped to dark panels only. */
+.detleng-content div[style*="background:#0F52BA"] h1,
+.detleng-content div[style*="background:#0F52BA"] h2,
+.detleng-content div[style*="background:#0F52BA"] h3,
+.detleng-content div[style*="background:#0F52BA"] h4,
+.detleng-content div[style*="background:#0F52BA"] p,
+.detleng-content div[style*="background:linear-gradient(135deg,#0F52BA"] h1,
+.detleng-content div[style*="background:linear-gradient(135deg,#0F52BA"] h2,
+.detleng-content div[style*="background:linear-gradient(135deg,#0F52BA"] h3,
+.detleng-content div[style*="background:linear-gradient(135deg,#0F52BA"] h4,
+.detleng-content div[style*="background:linear-gradient(135deg,#0F52BA"] p,
+.detleng-content div[style*="background:linear-gradient(135deg,#2563eb"] h1,
+.detleng-content div[style*="background:linear-gradient(135deg,#2563eb"] h2,
+.detleng-content div[style*="background:linear-gradient(135deg,#2563eb"] h3,
+.detleng-content div[style*="background:linear-gradient(135deg,#2563eb"] h4,
+.detleng-content div[style*="background:linear-gradient(135deg,#2563eb"] p,
+.detleng-principle h1,
+.detleng-principle h2,
+.detleng-principle h3,
+.detleng-principle h4,
+.detleng-principle p {
+  color: #fff !important;
+}
+
+.detleng-content div[style*="background:#0F52BA"] [style*="#FFD700"],
+.detleng-content div[style*="background:linear-gradient(135deg,#0F52BA"] [style*="#FFD700"],
+.detleng-content div[style*="background:linear-gradient(135deg,#2563eb"] [style*="#FFD700"],
+.detleng-content div[style*="background:#0F52BA"] [style*="yellow"] {
+  color: #ffd84d !important;
+}
+
+/* Honour intentional light text used by the older inline banner markup. */
+.detleng-content [style*="color:white"],
+.detleng-content [style*="color: white"],
+.detleng-content [style*="color:#fff"],
+.detleng-content [style*="color: #fff"],
+.detleng-content [style*="color:#ffffff"],
+.detleng-content [style*="color: #ffffff"] {
+  color: #fff !important;
+}
+
+.detleng-content [style*="color:#eef4ff"],
+.detleng-content [style*="color: #eef4ff"] {
+  color: #eef4ff !important;
+}
+
 .detleng-content div[style*="border-left"] {
   border-left: 4px solid var(--dt-gold) !important;
 }
